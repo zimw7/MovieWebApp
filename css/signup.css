@@ -1,0 +1,152 @@
+/* 
+File Name: signup.css
+Create Date: Nov 24, 2023 
+Purpose: This CSS file is used to style the signup page. 
+*/
+.welcome-to-visitrack1 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 50px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #1b232b;
+}
+.sign-up1 {
+  position: relative;
+  line-height: 28px;
+  font-weight: 600;
+}
+.hi-new-user {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-medium-size);
+  line-height: 20px;
+  color: var(--color-slategray);
+}
+.content1 {
+  align-self: stretch;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  font-size: var(--large-size);
+}
+.username3 {
+  position: relative;
+  line-height: 14px;
+  font-weight: 500;
+  display: inline-block;
+  width: 82px;
+  flex-shrink: 0;
+}
+.inputsmall7 {
+  border: 1px solid var(--color-lightgray);
+  background-color: var(--color-white);
+  flex: 1;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-5xs) var(--padding-xs);
+}
+.new {
+  margin: 0;
+}
+.newpassword,
+.signup-input-div {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.newpassword {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+}
+.signup-input-div {
+  width: 360px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  color: var(--color-black);
+}
+.login2 {
+  text-decoration: underline;
+  color: var(--slate-900);
+}
+.continue5,
+.new-user-sign-up-container1 {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.new-user-sign-up-container1 {
+  cursor: pointer;
+}
+.continue5 {
+  font-size: var(--body-medium-size);
+  font-family: var(--body-medium);
+  color: var(--color-white);
+  text-align: left;
+}
+.button5 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: var(--slate-900);
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.button-section1,
+.component-1 {
+  align-self: stretch;
+  display: flex;
+}
+.button-section1 {
+  height: 40px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-gray-100);
+}
+.component-1 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+  text-align: left;
+  font-size: var(--body-medium-size);
+  color: var(--slate-900);
+}
+.signup,
+.welcome-to-visitrack-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-to-visitrack-group {
+  width: 360px;
+  height: 386px;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.signup {
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-slategray);
+  font-family: var(--body-medium);
+}

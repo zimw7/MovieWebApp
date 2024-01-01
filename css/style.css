@@ -1,0 +1,247 @@
+/* 
+File Name: style.css
+Create Date: Nov 24, 2023 
+Purpose: This CSS file is used to style the dashborad page, movie detail page and add new movie page. 
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+  display: grid; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+}
+.main section, .main form {
+  padding: 1rem;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #1b232b;
+  margin-bottom: 30px;
+}
+.header-title {
+  margin: 0;
+  color: #fff;
+}
+.nav {
+  display: flex;
+}
+.nav-link {
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-link:last-child {
+  border-radius: 4px;
+}
+
+/* search filter */
+.search-filter-form {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  flex: 3; 
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.form-select {
+  flex: 1; 
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.form {
+  justify-self: center;
+  display: grid;
+  grid-gap: 1rem;
+  align-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-control, .form-select {
+  display: block;
+  padding: 15px 15px;
+  font-size: 1rem;
+}
+.button {
+  padding: 15px;
+  background-color: rgb(208, 101, 7);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+.danger {
+  background-color: #c00;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.movie {
+  text-align: center;
+}
+
+.movie img {
+  width: 100%;  /* 控制图片宽度，确保它适应容器 */
+  height: auto; /* 自动高度保持图片比例 */
+  max-height: 300px; /* 可以限制图片的最大高度 */
+}
+
+.movie div {
+  margin-top: 10px; /* 在图片和电影标题之间添加一些空间 */
+}
+
+.movie-details {
+  display: flex;
+  justify-content: space-between; /* This will place the title on the left and the rating on the right */
+  align-items: center;
+  width: 100%; /* Ensure the container takes the full width */
+}
+
+.movie-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-title {
+  font-size: 1rem; /* Adjusted font size */
+  color: #363636;
+  font-weight: 600;
+  margin: 0;
+  text-decoration: none; /* Remove underline */
+  text-align: left;
+}
+
+.movie-rating {
+  color: #FFA500;
+  text-decoration: none;
+  text-align: right;
+  font-weight: 500;
+}
+
+.movie-year {
+  font-weight: normal;
+}
+
+.movie-genre {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 0 15px 0;
+}
+.form-title {
+  justify-self: center;
+  font-size: 2rem;
+}
+
+/* show */
+.movie-info {
+  text-align: center;
+}
+.movie-poster {
+  max-width: 200px; /* 控制海报的最大宽度 */
+  height: auto; /* 高度自动调整以保持图片比例 */
+  border-radius: 8px; /* 可选的圆角样式 */
+  margin-bottom: 20px; /* 图片和下方内容之间的间隔 */
+}
+
+.movie-info {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-info h2, .movie-info p {
+  margin: 10px 0;
+}
+.movie-info h2 {
+  color: #092441;
+  font-size: 2rem;
+}
+.movie-info p {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.delete-button-container {
+  text-align: center; /* 居中容器内的内容 */
+  margin-top: 20px; /* 如需要，添加一些顶部间距 */
+}
+.delete-button {
+  background-color: #808080; /* 灰色背景 */
+  color: white; /* 白色文字 */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* 轻微圆角效果 */
+  cursor: pointer;
+}
+.delete-button:hover {
+  background-color: #696969; /* 鼠标悬停时的深灰色 */
+}
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.delete-button {
+  background-color: #808080; /* 灰色背景 */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* 移除链接的下划线 */
+  margin: 5px; /* 按钮之间的间隔 */
+}
+
+/* footer */
+.footer {
+  padding: 15px;
+  background-color: rgb(32, 41, 50);
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+}
+.footer-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  .search-filter-form {
+    display: block; /* Stack elements vertically */
+  }
+
+  .form-control, .form-select {
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Add some space between the elements */
+  }
+}

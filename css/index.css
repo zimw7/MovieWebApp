@@ -1,0 +1,197 @@
+/* 
+File Name: index.css
+Create Date: Nov 24, 2023 
+Purpose: This CSS file is used to style the signin page. 
+*/
+.welcome-to-visitrack {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: inherit;
+  line-height: 50px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  width: 360px;
+  color: #1b232b;
+}
+.title,
+.welcome-back {
+  position: relative;
+  line-height: 28px;
+  font-weight: 600;
+}
+.welcome-back {
+  margin: 0;
+  align-self: stretch;
+  font-size: var(--body-medium-size);
+  line-height: 20px;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--color-slategray);
+}
+.content {
+  width: 360px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  font-size: var(--large-size);
+}
+.username1 {
+  position: relative;
+  line-height: 14px;
+  font-weight: 500;
+  display: inline-block;
+  width: 82px;
+  flex-shrink: 0;
+}
+.inputsmall,
+.username {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.inputsmall {
+  border: 1px solid var(--color-lightgray);
+  background-color: var(--color-white);
+  flex: 1;
+  border-radius: var(--br-7xs);
+  justify-content: space-between;
+  padding: var(--padding-5xs) var(--padding-xs);
+}
+.username {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.email {
+  position: relative;
+  line-height: 20px;
+  display: none;
+}
+.inputsmall2 {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-5xs) var(--padding-xs);
+  text-align: left;
+  color: var(--slate-900);
+}
+.login-input-div,
+.password2-parent {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.password2-parent {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+}
+.login-input-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  color: var(--color-black);
+}
+.new-user {
+  color: var(--color-gray-100);
+}
+.span {
+  color: #333;
+}
+.sign-up {
+  text-decoration: underline;
+}
+.continue,
+.new-user-sign-up-container {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.new-user-sign-up-container {
+  cursor: pointer;
+}
+.continue {
+  font-size: var(--body-medium-size);
+  font-family: var(--body-medium);
+  color: var(--color-white);
+  text-align: left;
+}
+.button,
+.button-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: var(--slate-900);
+  border-radius: var(--br-7xs);
+  justify-content: flex-end;
+}
+.button-section {
+  width: 360px;
+  height: 40px;
+  justify-content: space-between;
+}
+.login1 {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+  text-align: left;
+  font-size: var(--body-medium-size);
+  color: var(--slate-900);
+}
+.login,
+.welcome-to-visitrack-parent {
+  position: relative;
+  width: 360px;
+  height: 334px;
+}
+.login {
+  background-color: var(--color-whitesmoke);
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-slategray);
+  font-family: var(--body-medium);
+}
+
+.loginError {
+  color: red;
+  margin-bottom: 10px;
+ 
+}
+.error-message {
+  color: red;
+}
+
+@media screen and (max-width: 420px) {
+  .login {
+    align-items: center;
+  }
+}
